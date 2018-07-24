@@ -1,0 +1,10 @@
+#roscoreが実行される状態で、以下のコマンドでmap serverをstartします。
+#TurtleBot3のemanualどおりだと、$HOME/map.yamlというファイル名で保存される。
+
+rosrun map_server map_server $HOME/map.yaml
+
+#別のターミナルでrvizを実行する。
+rosrun rviz rviz
+
+#立ち上がったRViz上でMAP>TOPICの設定を/mapに変更
+#保存されたマップが表示されるはず。
